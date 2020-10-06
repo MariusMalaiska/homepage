@@ -1,0 +1,41 @@
+.Link {
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+
+  .LinkName {
+    display: relative;
+    transform: rotate(-45deg);
+    font-size: 60px;
+    line-height: unset;
+    top: 0;
+    margin: auto;
+    z-index: 3;
+    transform-origin: 60% 50%;
+  }
+}
+
+.Link:hover:after {
+  content: attr(data-before);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  cursor: pointer;
+}

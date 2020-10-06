@@ -1,0 +1,58 @@
+.Settings {
+  position: fixed;
+  display: flex;
+  bottom: 10px;
+  border-radius: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 3;
+
+  .Inputs {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: white;
+      font-family: "Sniglet", cursive;
+    }
+
+    .Input {
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 5px 0;
+      outline-width: 0;
+      padding: 2px 8px;
+      min-width: 200px;
+      box-sizing: border-box;
+    }
+  }
+
+  .LinkAdress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    p {
+      margin: unset;
+    }
+
+    .DelleteLink {
+      height: min-content;
+      border: none;
+      border-radius: 100%;
+      background-color: unset;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}

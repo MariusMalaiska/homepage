@@ -1,0 +1,15 @@
+.Footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  color: lightgrey;
+}
+
+.Creator {
+  font-family: "Great Vibes", cursive;
+}

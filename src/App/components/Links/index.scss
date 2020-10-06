@@ -1,0 +1,11 @@
+.Links {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  top: 30px;
+  left: 30px;
+  margin: auto;
+  z-index: 2;
+}
