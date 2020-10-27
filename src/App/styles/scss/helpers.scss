@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Serif+Pro:wght@700&family=Varela+Round&display=swap');
+
+:root {
+    --main-font: 'Varela Round', sans-serif;
+    --secondary-font: 'Source Serif Pro', serif;
+    --thrid-font: 'Great Vibes', cursive;
+  }
+
+  .Open {
+      opacity: 0;
+    // display: block;
+    transition: all 0.5s ease-in-out;
+  }

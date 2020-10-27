@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./index.scss";
+import { NameContext } from "../../../providers/name.provider.js";
+import { ModalContext } from "../../../providers/modal.provider.js";
 
 function Footer() {
+  const { name } = useContext(NameContext);
+  const { toggleModal, isOpen } = useContext(ModalContext);
   return (
-    <div className="Footer">
-      <h1 className="Creator">Marius Malaiška</h1>
+    <div className={!isOpen && "Creator Footer"}>
+      <button onClick={toggleModal} className="Creator">{localStorage.getItem("Name") || name}</button>
     </div>
   );
 }

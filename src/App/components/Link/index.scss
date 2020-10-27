@@ -11,6 +11,7 @@
   text-decoration: none;
   color: black;
   text-align: center;
+  font-family: var(--secondary-font);
 
   .LinkName {
     display: relative;
@@ -34,7 +35,7 @@
   right: 0;
   bottom: 0;
   border-radius: 10px;
-  color: white;
+  color:  rgba(255, 255, 255, 0.7);
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 5;
   cursor: pointer;

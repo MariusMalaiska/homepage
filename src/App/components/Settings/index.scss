@@ -1,6 +1,8 @@
 .Settings {
+  opacity: 1;
   position: fixed;
   display: flex;
+  flex-direction: column;
   bottom: 10px;
   border-radius: 10px;
   right: 0;
@@ -12,28 +14,54 @@
   padding: 10px;
   box-sizing: border-box;
   z-index: 3;
+  transition: all 0.5s ease-in-out;
+
+
+.Close{
+  position: absolute;
+  right: 7px;
+  top:0px;
+  margin: auto;
+  width: min-content;
+  font-weight: 600;
+  font-size: 25px;
+  border: unset;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: unset;
+  color: white;
+  
+  &:focus { outline:none }
+  
+}
+  .Options{
+    display: flex;
+  }
 
   .Inputs {
     display: flex;
     flex-direction: column;
-    label {
-      color: white;
-      font-family: "Sniglet", cursive;
-    }
-
-    .Input {
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      margin: 5px 0;
-      outline-width: 0;
-      padding: 2px 8px;
-      min-width: 200px;
-      box-sizing: border-box;
-    }
+    margin: 0px 10px;
   }
 
-  .LinkAdress {
+  label {
+    color: white;
+    font-family: var(--main-font);
+    // font-family: "Sniglet", cursive;
+  }
+  .Input,
+  .Select {
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    outline-width: 0;
+    padding: 2px 8px;
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+
+  .DynamicList {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,6 +81,20 @@
       font-weight: bold;
       margin-left: 10px;
       cursor: pointer;
+      &:focus { outline:none }
     }
   }
+  .Contacts{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+    text-decoration: none;
+
+       &:hover{
+       cursor: pointer;
+       }
+  }
+
 }
