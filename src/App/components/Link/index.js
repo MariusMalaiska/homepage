@@ -8,6 +8,8 @@ function Link(link) {
       className="Link"
       href={`http://` + link.link}
       data-before={link.link.split(".")[1]}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <h2 className="LinkName"> {link.link.charAt(4).toUpperCase()}</h2>
     </a>

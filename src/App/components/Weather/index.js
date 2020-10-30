@@ -20,6 +20,7 @@ function Weather() {
   useEffect(() => {
     getWeather()
     setInterval(getWeather, 30 * 60 * 1000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 

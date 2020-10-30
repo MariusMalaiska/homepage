@@ -21,13 +21,13 @@
   position: absolute;
   right: 7px;
   top:0px;
-  margin: auto;
+  margin: 0 5px;
   width: min-content;
   font-weight: 600;
   font-size: 25px;
   border: unset;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px 15px;
   background-color: unset;
   color: white;
   
@@ -43,7 +43,12 @@
     flex-direction: column;
     margin: 0px 10px;
   }
-
+.Input-error{
+  text-align: center;
+  color:darkred;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
   label {
     color: white;
     font-family: var(--main-font);
